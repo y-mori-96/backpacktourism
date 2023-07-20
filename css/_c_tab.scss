@@ -1,0 +1,42 @@
+.tab_lists {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: $mgbt-pc-conponents;
+
+  .tab_item {
+    width: 50%;
+    font-size: $fs-pc-header-2;
+    text-align: center;
+
+    .tab_link {
+      display: block;
+      width: 100%;
+      padding: 1rem 0;
+      background-color: $col-gray;
+
+      &:hover {
+        border-left: 16px solid $col-main-hover;
+      }
+
+      &.active {
+        border-left: 16px solid $col-main ;
+      }
+    }
+
+    @include mq(md) {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  @include mq(sm) {
+    flex-direction: column;
+    gap: 1rem;
+
+    .tab_item {
+      width: 100%;
+    }
+  }
+}

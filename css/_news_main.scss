@@ -1,0 +1,130 @@
+.corporate_site#news {
+  article.news {
+    .search {
+      .accordion {
+        width: 100%;
+        background-color: $col-gray;
+        padding: 1rem;
+        margin-bottom: $mgbt-pc-conponents;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &::after {
+          content: url(../images/arrow-right.svg);
+          display: block;
+          width: $wdhi-accordion-arrow;
+          height: $wdhi-accordion-arrow;
+          line-height: $wdhi-accordion-arrow;
+        }
+
+        &.active {
+          margin-bottom: $mgbt-pc-contents;
+
+          &::after {
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      >.wrapper {
+        width: 100%;
+        background-color: $col-gray;
+        padding: 2rem;
+        margin-bottom: $mgbt-pc-conponents;
+
+        .keyword {
+          width: 100%;
+          height: $hi-search-box;
+          margin-bottom: $mgbt-pc-conponents;
+
+          input[type="text"] {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            text-align: center;
+            border: $bd-search-box;
+          }
+        }
+
+        .release_date {
+          width: 100%;
+          height: $hi-search-box;
+          margin-bottom: $mgbt-pc-conponents;
+
+          select {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            text-align: center;
+            border: $bd-search-box;
+          }
+        }
+
+        .sort {
+          width: 100%;
+          height: $hi-search-box;
+          margin-bottom: $mgbt-pc-conponents;
+
+          select {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            text-align: center;
+            border: $bd-search-box;
+          }
+        }
+
+        .category {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2rem;
+
+          width: 100%;
+
+          margin-bottom: $mgbt-pc-conponents;
+
+          .wrapper {
+            width: 100%;
+            height: 100%;
+
+            input[type="checkbox"] {
+              appearance: auto;
+              width: 50px;
+              height: $hi-search-box;
+            }
+          }
+        }
+
+        .clear {
+          width: 50%;
+          height: 100%;
+          text-align: center;
+          margin: 0 0 0 auto;
+
+          input[type="button"] {
+            width: 100%;
+            height: $hi-search-box;
+            border: $bd-search-box;
+          }
+
+          input[type="button"]:hover {
+            background-color: #fff;
+          }
+        }
+
+        @include mq(md) {
+          .category {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        @include mq(sm) {
+          .category {
+            grid-template-columns: repeat(1, 1fr);
+          }
+        }
+      }
+    }
+  }
+}

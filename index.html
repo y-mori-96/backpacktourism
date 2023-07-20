@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex , nofollow" />
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+
+  <title>旅行会社</title>
+</head>
+
+<body id="home" class="corporate_site">
+  <header>
+    <h1>
+      <a href="index.html">
+        <img src="images/logo.png" alt="バックパックツーリズム">
+      </a>
+    </h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="company.html">
+            企業情報
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            IR情報
+          </a>
+        </li>
+        <li>
+          <a href="news.html">
+            お知らせ一覧
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            採用情報
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            お問い合わせ
+          </a>
+        </li>
+        <li class="reservation_site">
+          <a href="reservation.html">
+            WEB予約
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <span class="hamburger_bar"></span>
+      <span class="hamburger_bar"></span>
+      <span class="hamburger_bar"></span>
+    </div>
+  </header>
+
+  <main>
+    <article class="hero">
+      <img src="images/hero.jpg" alt="">
+      <p class="catch_copy">
+        さぁ、いこう
+      </p>
+    </article>
+
+    <article class="news">
+      <h2 class="title">お知らせ</h2>
+      <ul id="get_news_toppage">
+        <!-- news_data.jsonが入る -->
+      </ul>
+      <a href="news.html" class="seemore_btn go_news_page">
+        もっと見る
+      </a>
+    </article>
+
+    <article class="contents">
+      <div class="wrapper">
+        <h2 class="title">コンテンツ</h2>
+        <ul>
+          <li>
+            <a href="reservation.html">
+              <figure>
+                <img src="images/no_image.png" alt="航空券予約サイト">
+                <figcaption>
+                  航空券予約サイト
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="company.html">
+              <figure>
+                <img src="images/contents/company.jpg" alt="企業情報">
+                <figcaption>企業情報</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="images/contents/recruit.jpg" alt="採用情報">
+                <figcaption>採用情報</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <ul>
+      <li>
+        <a href="#">
+          個人情報保護
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          ご利用案内
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          お問い合わせ
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          サイトマップ
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">
+      <small>
+        &copy; 2023 バックパックツーリズム株式会社
+      </small>
+    </p>
+  </footer>
+
+  <p class="pagetop">
+    <a href="#">↑</a>
+  </p>
+
+  <script src="js/common/jquery-3.7.0.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/corporate/createNews.js"></script>
+  <script src="js/components/hamburger.js"></script>
+  <script src="js/components/pagetop.js"></script>
+</body>
+
+</html>

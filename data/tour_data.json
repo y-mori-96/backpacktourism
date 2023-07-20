@@ -1,0 +1,56 @@
+[
+  {
+    "image": "images/tour/whale-shark.jpg",
+    "country": "フィリピン",
+    "title": "ジンベイザメ餌付け体験",
+    "departure": "2022年7月　出発",
+    "price": "50,000円～60,000円",
+    "link": "#",
+    "update": "2022-01-01"
+  },
+  {
+    "image": "images/tour/diving.jpg",
+    "country": "エジプト",
+    "title": "ダハブダイビング",
+    "departure": "2022年8月　出発",
+    "price": "200,000円～250,000円",
+    "link": "#",
+    "update": "2022-01-12"
+  },
+  {
+    "image": "images/tour/mont-saint-michel.jpg",
+    "country": "フランス",
+    "title": "モンサンミッシェル",
+    "departure": "2022年9月　出発",
+    "price": "70,000円～100,000円",
+    "link": "#",
+    "update": "2022-01-11"
+  },
+  {
+    "image": "images/tour/abu-simbel.jpg",
+    "country": "エジプト",
+    "title": "アブジンベル",
+    "departure": "2022年12月　出発",
+    "price": "300,000円～350,000円",
+    "link": "#",
+    "update": "2022-06-01"
+  },
+  {
+    "image": "images/tour/uyuni.jpg",
+    "country": "ボリビア",
+    "title": "ウユニ塩湖",
+    "departure": "2022年2月　出発",
+    "price": "500,000円～600,000円",
+    "link": "#",
+    "update": "2022-05-04"
+  },
+  {
+    "image": "images/tour/Kilimanjaro.jpg",
+    "country": "タンザニア",
+    "title": "キリマンジャロ登山",
+    "departure": "2022年7月　出発",
+    "price": "500,000円～600,000円",
+    "link": "#",
+    "update": "2022-01-01"
+  }
+]

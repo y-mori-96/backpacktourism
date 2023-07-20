@@ -1,0 +1,47 @@
+footer {
+  padding: 2rem;
+  background-color: $col-base;
+  color: $col-white;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    margin-bottom: $mgbt-pc-contents;
+
+    li {
+
+      a {
+        display: block;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      @include mq(md) {
+        a {
+          font-size: 0.8rem;
+        }
+
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: $fs-copyright;
+  }
+
+  @include mq(sm) {
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+}

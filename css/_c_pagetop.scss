@@ -1,0 +1,32 @@
+.pagetop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+
+  a {
+    display: block;
+    background-color: $col-main;
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+
+    color: $col-white;
+    font-size: 2rem;
+
+    box-shadow: $sd-card;
+
+    &:hover {
+      background-color: $col-main-hover;
+    }
+  }
+
+  @include mq(sm) {
+    a {
+      display: none;
+    }
+  }
+}

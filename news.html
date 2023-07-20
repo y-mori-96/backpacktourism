@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex , nofollow" />
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <title>旅行会社</title>
+</head>
+
+<body id="news" class="corporate_site">
+  <header>
+    <h1>
+      <a href="index.html">
+        <img src="images/logo.png" alt="バックパックツーリズム">
+      </a>
+    </h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="company.html">
+            企業情報
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            IR情報
+          </a>
+        </li>
+        <li>
+          <a href="news.html">
+            お知らせ一覧
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            採用情報
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            お問い合わせ
+          </a>
+        </li>
+        <li class="reservation_site">
+          <a href="reservation.html">
+            WEB予約
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <span class="hamburger_bar"></span>
+      <span class="hamburger_bar"></span>
+      <span class="hamburger_bar"></span>
+    </div>
+  </header>
+
+  <main>
+    <article class="news">
+      <h2 class="title">お知らせ一覧</h2>
+
+      <div class="search">
+        <button id="news_search_btn" class="accordion">絞り込み</button>
+
+        <div id="news_search_contents" class="wrapper">
+          <div class="keyword">
+            <input type="text" name="keyword" id="keyword_input" placeholder="日付け、タイトルで検索" />
+          </div>
+
+          <div class="release_date">
+            <select name="release_year">
+              <option value="all">期間を選択</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+
+          <div class="sort">
+            <select name="sort">
+              <option value="release_new">
+                新着順
+              </option>
+              <option value="release_old">
+                投稿順
+              </option>
+            </select>
+          </div>
+
+          <div class="category">
+            <div class="wrapper">
+              <input type="checkbox" id="news_category_all" name="news_category" value="all" checked />
+              <label for="news_category_all">すべて</label>
+            </div>
+            <div class="wrapper">
+              <input type="checkbox" id="promotion_info" name="news_category" value="promotion_info" checked />
+              <label for="promotion_info">商品情報</label>
+            </div>
+            <div class="wrapper">
+              <input type="checkbox" id="company_info" name="news_category" value="company_info" checked />
+              <label for="company_info">企業情報</label>
+            </div>
+            <div class="wrapper">
+              <input type="checkbox" id="fiscal_info" name="news_category" value="fiscal_info" checked>
+              <label for="fiscal_info">決算情報</label>
+            </div>
+          </div>
+
+          <div class="clear">
+            <input type="button" value="条件クリア">
+          </div>
+        </div>
+      </div>
+      <!-- search end -->
+
+      <ul id="get_news_newspage">
+        <!-- news_data.jsonが入る -->
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    <ul>
+      <li>
+        <a href="#">
+          個人情報保護
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          ご利用案内
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          お問い合わせ
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          サイトマップ
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">
+      <small>
+        &copy; 2023 バックパックツーリズム株式会社
+      </small>
+    </p>
+  </footer>
+
+  <p class="pagetop">
+    <a href="#">↑</a>
+  </p>
+
+  <script src="js/common/jquery-3.7.0.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/corporate/createNews.js"></script>
+  <script src="js/corporate/newsSearchAccordion.js"></script>
+  <script src="js/components/hamburger.js"></script>
+  <script src="js/components/pagetop.js"></script>
+</body>
+
+</html>

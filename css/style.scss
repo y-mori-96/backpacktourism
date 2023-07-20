@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*  レイアウト
+*******************************/
+@import "_ly_breakpoint";
+@import "_ly_mixin";
+@import "_ly_variable";
+@import "_ly_common";
+@import "_ly_header";
+@import "_ly_footer";
+
+/*  コンポーネント
+*******************************/
+@import "_c_article_title";
+@import "_c_seemore_btn";
+@import "_c_card";
+@import "_c_tab";
+@import "_c_pagetop";
+
+
+/*  コーポレートサイト
+*******************************/
+/*  トップページ
+***************************/
+@import "_corporate_main";
+
+/*  お知らせ一覧
+***************************/
+@import "_news_main";
+
+/*  企業情報
+***************************/
+@import "_company_main";
+
+/*  予約サイト
+*******************************/
+@import "_reservation_main";

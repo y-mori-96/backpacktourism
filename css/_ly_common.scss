@@ -1,0 +1,30 @@
+/* common
+******************************/
+.corporate_site .news,
+.corporate_site .contents .wrapper,
+.corporate_site#news .search,
+.corporate_site#company .company_info,
+.corporate_site#company .access .wrapper,
+.reservation_site .recommend,
+.reservation_site .tour,
+.reservation_site .useful {
+  width: $wd-pc-contents;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article {
+  padding-top: $pd-pc-article;
+  padding-bottom: $pd-pc-article;
+
+  @include mq(lg) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    &.hero {
+      padding: 0;
+    }
+  }
+
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "image": "images/world-heritage/machu-pichu.jpg",
+    "country": "ペルー",
+    "title": "マチュピチュ",
+    "departure": "2023年7月　出発",
+    "link": "#",
+    "update": "2023-01-01"
+  },
+  {
+    "image": "images/world-heritage/taj-mahal.jpg",
+    "country": "インド",
+    "title": "タージマハル",
+    "departure": "2023年7月　出発",
+    "link": "#",
+    "update": "2023-01-01"
+  },
+  {
+    "image": "images/world-heritage/great-wall.jpg",
+    "country": "中国",
+    "title": "万里の長城",
+    "departure": "2023年7月　出発",
+    "link": "#",
+    "update": "2023-01-01"
+  },
+  {
+    "image": "images/world-heritage/great-barrier-reef.jpg",
+    "country": "オーストラリア",
+    "title": "グレードバリアリーフ",
+    "departure": "2023年7月　出発",
+    "link": "#",
+    "update": "2023-01-01"
+  },
+  {
+    "image": "images/world-heritage/grand-canyon.jpg",
+    "country": "アメリカ",
+    "title": "グランドキャニオン",
+    "departure": "2023年7月　出発",
+    "link": "#",
+    "update": "2023-01-01"
+  },
+  {
+    "image": "images/world-heritage/florence.jpg",
+    "country": "イタリア",
+    "title": "フィレンツェ",
+    "departure": "2023年7月　出発",
+    "link": "#",
+    "update": "2023-01-01"
+  }
+]

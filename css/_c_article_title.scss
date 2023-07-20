@@ -1,0 +1,32 @@
+.corporate_site {
+  h2.title {
+    font-size: $fs-pc-header-2;
+    margin-bottom: $pd-pc-article;
+    text-align: center;
+  }
+
+  @include mq(sm) {
+    h2.title {
+      font-size: $fs-mb-header-2;
+    }
+  }
+}
+
+.reservation_site {
+  h2.title {
+    font-size: $fs-pc-header-2;
+    text-align: center;
+    padding: 1rem 0;
+    color: $col-black;
+    background: $col-gray;
+    border-left: 1rem solid $col-main;
+    box-shadow: $sd-card;
+    margin-bottom: $mgbt-pc-conponents;
+  }
+
+  @include mq(md) {
+    h2.title {
+      font-size: $fs-mb-header-2;
+    }
+  }
+}

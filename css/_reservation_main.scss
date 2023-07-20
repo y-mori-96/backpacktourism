@@ -1,0 +1,73 @@
+.reservation_site {
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+  }
+
+  .ticket {
+    height: calc(100vh - $hi-header);
+  }
+
+  .useful {
+
+    .useful_lists {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+
+      margin-bottom: 2rem;
+
+      .useful_item {
+        margin: 0 auto;
+        background-color: $col-white;
+        box-shadow: $sd-card;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        .useful_link {
+          display: block;
+          overflow: hidden;
+
+          figure {
+            position: relative;
+
+            img {
+              width: 200px;
+              height: 200px;
+              object-fit: cover;
+            }
+
+            figcaption {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              color: $col-black;
+              text-align: center;
+              background-color: $col-white;
+              padding: 1rem 0;
+            }
+          }
+
+        }
+      }
+
+      @include mq(lg) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include mq(md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include mq(sm) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+  }
+}

@@ -1,0 +1,81 @@
+.card_lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 56px;
+
+  .card_item {
+    height: 100%;
+    background-color: $col-white;
+    box-shadow: $sd-card;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    .card_link {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      .card_header {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: 1rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .card_body {
+        padding: 1rem;
+
+        p {
+          margin-bottom: 0.5rem;
+
+          &:last-of-type {
+            margin-top: 2rem;
+            margin-bottom: 0;
+          }
+
+          &.tour_country,
+          &.festival_country,
+          &.world_heritage_country {
+            font-size: 16px;
+          }
+
+          &.tour_title,
+          &.festival_title,
+          &.world_heritagel_title {
+            font-size: 20px;
+          }
+
+          &.tour_departure,
+          &.festival_outline,
+          &.festival_data {
+            font-size: 16px;
+          }
+
+          &.tour_price {
+            font-size: 24px;
+            color: $col-red;
+          }
+
+        }
+
+      }
+    }
+  }
+
+  @include mq(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq(sm) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

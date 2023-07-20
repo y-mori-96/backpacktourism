@@ -1,0 +1,92 @@
+.corporate_site#company {
+  article.company_info {
+    table {
+      width: 100%;
+
+
+      tr {
+        width: 100%;
+        border-top: $bd-company-table;
+        font-size: $fs-pc-company-table-text;
+
+        &:last-of-type {
+          border-bottom: $bd-company-table;
+        }
+
+        th {
+          width: $wd-pc-company-table;
+          text-align: center;
+          background-color: $col-gray;
+          padding: 1rem 0;
+        }
+
+        td {
+          width: calc(100% - $wd-pc-company-table);
+          padding: 1rem 0 1rem 2rem;
+        }
+
+        @include mq(md) {
+          display: flex;
+          flex-direction: column;
+
+          td {
+            width: 100%;
+            padding-left: 0;
+          }
+        }
+      }
+
+    }
+  }
+
+  article.access {
+    background-color: $col-gray;
+
+    .wrapper {
+      display: flex;
+      align-items: start;
+      gap: 2rem;
+
+      iframe {
+        width: 60%;
+        height: 500px;
+      }
+
+      .body {
+        width: 40%;
+
+        h3 {
+          font-size: $fs-pc-header-3;
+          margin-bottom: $mgbt-pc-contents;
+          border-bottom: $bd-search-box;
+        }
+
+        p {
+          font-size: $fs-pc-company-access-text;
+          margin-bottom: $mgbt-pc-text;
+        }
+
+        .headquarters {
+          margin-bottom: $mgbt-pc-conponents;
+        }
+      }
+
+      @include mq(md) {
+        flex-direction: column;
+
+        iframe {
+          width: 100%;
+          height: 400px;
+
+          @include mq(sm) {
+            height: 300px;
+          }
+        }
+
+        .body {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
