@@ -3,8 +3,8 @@ $(function () {
   // パスの取得
   let path = location.pathname;
   let pathname = location.pathname.split('/');
-  console.log('path: ' + path);
-  console.log('pathname: ' + pathname[1]);
+  // console.log('path: ' + path);
+  // console.log('pathname: ' + pathname[1]);
 
   let isPage = "topPage";
   let isSite = "corporate";
@@ -18,7 +18,7 @@ $(function () {
     domain = "";
   }
 
-  console.log('domain: ' + domain);
+  // console.log('domain: ' + domain);
 
   if (path === (domain + "/index.html")) {
     isPage = "topPage";
@@ -34,9 +34,9 @@ $(function () {
     isSite = "reservation";
   }
 
-  console.log(domain + "/～.html");
-  console.log('isPage: ' + isPage);
-  console.log('isSite: ' + isSite);
+  // console.log(domain + "/～.html");
+  // console.log('isPage: ' + isPage);
+  // console.log('isSite: ' + isSite);
 
   if (isPage === "topPage") {
     createNews(isPage);
@@ -46,15 +46,15 @@ $(function () {
     newsSearchAccordion();
   }
   else if (isPage === "reservationPage") {
+    createTicket();
     createTour();
     createFestival();
     createWorldHeritage();
+    clickRouteBtn();
     tab();
   } else {
     // 処理なし
   }
-
-
 
   // 共通
   hamburger();
