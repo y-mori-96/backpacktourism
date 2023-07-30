@@ -109,22 +109,6 @@ function createNews(isPage) {
    * データ作成フロー
    */
   function createDataFlow() {
-    // // 検索
-    // const filteredData = searchData(
-    //   keyword,
-    //   releaseYear,
-    //   // getMinValue,
-    //   // getMaxValue,
-    //   // getGenreValue,
-    //   // getManufacturerValue
-    // );
-
-    // // ソート
-    // const sortedData = sortData(filteredData, sortBy);
-
-    // // データ作成
-    // container.empty();
-    // createData(sortedData, container);
     const filteredData = searchData();
     const sortedData = sortData(filteredData);
 
