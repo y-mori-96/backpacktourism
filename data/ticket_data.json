@@ -1,0 +1,134 @@
+[
+  {
+    "route": "one_way",
+    "departure_date": "2023-07-27 12:30",
+    "arrival_date": "2023-07-27 14:25",
+    "point_departure_name": "関西国際空港(大阪)",
+    "point_departure_code": "KIX",
+    "point_arrival_name": "仁川国際空港(韓国)",
+    "point_arrival_code": "ICN",
+    "price_base": "26080",
+    "link": "#"
+  },
+  {
+    "route": "one_way",
+    "departure_date": "2023-07-27 18:10",
+    "arrival_date": "2023-07-27 20:05",
+    "point_departure_name": "関西国際空港(大阪)",
+    "point_departure_code": "KIX",
+    "point_arrival_name": "仁川国際空港(韓国)",
+    "point_arrival_code": "ICN",
+    "price_base": "17380",
+    "link": "#"
+  },
+  {
+    "route": "one_way",
+    "departure_date": "2023-07-27 19:55",
+    "arrival_date": "2023-07-27 21:25",
+    "point_departure_name": "関西国際空港(大阪)",
+    "point_departure_code": "KIX",
+    "point_arrival_name": "仁川国際空港(韓国)",
+    "point_arrival_code": "ICN",
+    "price_base": "21180",
+    "link": "#"
+  },
+  {
+    "route": "one_way",
+    "departure_date": "2023-07-27 07:55",
+    "arrival_date": "2023-07-27 09:55",
+    "point_departure_name": "関西国際空港(大阪)",
+    "point_departure_code": "KIX",
+    "point_arrival_name": "台湾桃園空港(台湾)",
+    "point_arrival_code": "TPE",
+    "price_base": "26680",
+    "link": "#"
+  },
+  {
+    "route": "one_way",
+    "departure_date": "2023-07-27 23:25",
+    "arrival_date": "2023-07-28 01:25",
+    "point_departure_name": "関西国際空港(大阪)",
+    "point_departure_code": "KIX",
+    "point_arrival_name": "台湾桃園空港(台湾)",
+    "point_arrival_code": "TPE",
+    "price_base": "23080",
+    "link": "#"
+  },
+  {
+    "route": "one_way",
+    "departure_date": "2023-07-27 19:50",
+    "arrival_date": "2023-07-28 23:55",
+    "point_departure_name": "関西国際空港(大阪)",
+    "point_departure_code": "KIX",
+    "point_arrival_name": "スワンナプーム国際空港(タイ)",
+    "point_arrival_code": "BKK",
+    "price_base": "16080",
+    "link": "#"
+  },
+  {
+    "route": "one_way",
+    "departure_date": "2023-08-03 07:30",
+    "arrival_date": "2023-08-03 09:20",
+    "point_departure_name": "仁川国際空港(韓国)",
+    "point_departure_code": "ICN",
+    "point_arrival_name": "関西国際空港(大阪)",
+    "point_arrival_code": "KIX",
+    "price_base": "14700",
+    "link": "#"
+  },
+  {
+    "route": "one_way",
+    "departure_date": "2023-08-03 10:20",
+    "arrival_date": "2023-08-03 12:10",
+    "point_departure_name": "仁川国際空港(韓国)",
+    "point_departure_code": "ICN",
+    "point_arrival_name": "関西国際空港(大阪)",
+    "point_arrival_code": "KIX",
+    "price_base": "16600",
+    "link": "#"
+  },
+  {
+    "route": "one_way",
+    "departure_date": "2023-08-03 21:00",
+    "arrival_date": "2023-08-03 22:50",
+    "point_departure_name": "仁川国際空港(韓国)",
+    "point_departure_code": "ICN",
+    "point_arrival_name": "関西国際空港(大阪)",
+    "point_arrival_code": "KIX",
+    "price_base": "16600",
+    "link": "#"
+  },
+  {
+    "route": "one_way",
+    "departure_date": "2023-08-03 02:15",
+    "arrival_date": "2023-08-03 06:00",
+    "point_departure_name": "台湾桃園空港(台湾)",
+    "point_departure_code": "TPE",
+    "point_arrival_name": "関西国際空港(大阪)",
+    "point_arrival_code": "KIX",
+    "price_base": "26600",
+    "link": "#"
+  },
+  {
+    "route": "one_way",
+    "departure_date": "2023-08-03 10:50",
+    "arrival_date": "2023-08-03 14:35",
+    "point_departure_name": "台湾桃園空港(台湾)",
+    "point_departure_code": "TPE",
+    "point_arrival_name": "関西国際空港(大阪)",
+    "point_arrival_code": "KIX",
+    "price_base": "33800",
+    "link": "#"
+  },
+  {
+    "route": "one_way",
+    "departure_date": "2023-08-03 01:15",
+    "arrival_date": "2023-08-03 09:20",
+    "point_departure_name": "スワンナプーム国際空港(タイ)",
+    "point_departure_code": "BKK",
+    "point_arrival_name": "関西国際空港(大阪)",
+    "point_arrival_code": "KIX",
+    "price_base": "11700",
+    "link": "#"
+  }
+]
