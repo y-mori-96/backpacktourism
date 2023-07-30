@@ -9,186 +9,279 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <title>旅行会社</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+  <title>バックパックツーリズム | 航空券予約</title>
 </head>
 
 <body id="reservation" class="reservation_site">
+  <div id="no_scroll" class="no_scroll">
+    <canvas id="earthCanvas"></canvas>
 
-  <canvas id="earthCanvas"></canvas>
+    <header>
+      <h1>
+        <a href="reservation.html">
+          <img src="images/logo.png" alt="バックパックツーリズム">
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              お祭り情報
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              世界遺産情報
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              ツアー情報
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              お役立ち情報
+            </a>
+          </li>
+          <li class="log_in">
+            <a href="#">
+              ログイン/新規登録
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <span class="hamburger_bar"></span>
+        <span class="hamburger_bar"></span>
+        <span class="hamburger_bar"></span>
+      </div>
+    </header>
 
-  <header>
-    <h1>
-      <a href="reservation.html">
-        <img src="images/logo.png" alt="バックパックツーリズム">
-      </a>
-    </h1>
-    <nav>
+    <main>
+      <article class="ticket">
+        <section class="search">
+          <form action="" method="post">
+            <div class="wrapper">
+              <input id="btn_outward_trip" type="button" value="往復" class="btn_outward_trip">
+              <input id="btn_one_way" type="button" value="片道" class="btn_one_way">
+
+              <select name="point_departure" class="point_departure">
+                <option value="none">
+                  出発地
+                </option>
+                <option value="KIX">
+                  関西国際空港(大阪)
+                </option>
+                <option value="ICN">
+                  仁川国際空港(韓国)
+                </option>
+                <option value="TPE">
+                  台湾桃園空港(台湾)
+                </option>
+                <option value="BKK">
+                  スワンナプーム国際空港(タイ)
+                </option>
+              </select>
+
+              <select name="point_arrival" class="point_arrival">
+                <option value="none">
+                  目的地
+                </option>
+                <option value="KIX">
+                  関西国際空港(大阪)
+                </option>
+                <option value="ICN">
+                  仁川国際空港(韓国)
+                </option>
+                <option value="TPE">
+                  台湾桃園空港(台湾)
+                </option>
+                <option value="BKK">
+                  スワンナプーム国際空港(タイ)
+                </option>
+              </select>
+
+              <input type="text" name="date_outward_trip" class="date_outward_trip" onfocus="this.type='date'"
+                onblur="if(!this.value)this.type='text';" onchange="if(!this.value)this.type='text';" placeholder="往路出発日"
+                value="">
+
+              <input type="text" id="date_return_journey" name="date_return_journey" class="date_return_journey"
+                onfocus="this.type='date'" onblur="if(!this.value)this.type='text';"
+                onchange="if(!this.value)this.type='text';" placeholder="復路出発日" value="">
+
+              <input type="number" name="adult" placeholder="大人(12歳以上)" class="adult" step="0" min="0">
+              <input type="number" name="child" placeholder="子ども(2-11歳)" class="child" step="0" min="0">
+              <input type="number" name="infant" placeholder="幼児(2歳未満)" class="infant" step="0" min="0">
+
+              <input type="number" name="max" placeholder="予算(例:50000)" class="max" step="0" min="0">
+
+              <select name="sort" class="sort">
+                <option value="low_price">
+                  料金が安い順
+                </option>
+                <option value="high_price">
+                  料金が高い順
+                </option>
+                <option value="early_departure">
+                  出発時間が早い順
+                </option>
+                <option value="late_departure">
+                  出発時間が遅い順
+                </option>
+                <option value="early_arrival">
+                  到着時間が早い順
+                </option>
+                <option value="late_arrival">
+                  到着時間が遅い順
+                </option>
+                <option value="short_flight_time">
+                  所要時間が短い順
+                </option>
+              </select>
+
+              <input id="ticket_clear_btn" type="button" value="条件をクリア" class="clear">
+            </div>
+          </form>
+        </section>
+        <section class="container">
+          <div class="wrapper">
+            <ul id="ticket_lists" class="ticket_lists">
+              <!-- ticket_data.jsonが入る -->
+              
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <article class="recommend">
+        <ul class="tab_lists">
+          <li class="tab_item">
+            <a id="tab_festival_info" href="#festival_info" class="active tab_link">
+              お祭り情報
+            </a>
+          </li>
+          <li class="tab_item">
+            <a id="tab_world_heritage_info" href="#world_heritage_info" class="tab_link">
+              世界遺産情報
+            </a>
+          </li>
+        </ul>
+
+        <div id="recommend_contents">
+          <div id="festival_info">
+            <ul id="get_festival_toppage" class="card_lists">
+              <!-- festival_data.jsonが入る -->
+            </ul>
+            <a href="#" class="seemore_btn">
+              もっと見る
+            </a>
+          </div>
+
+          <div id="world_heritage_info">
+            <ul id="get_world_heritage_toppage" class="card_lists">
+              <!-- festival_data.jsonが入る -->
+            </ul>
+            <a href="#" class="seemore_btn">
+              もっと見る
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="tour">
+        <h2 class="title">ツアー情報</h2>
+        <ul id="get_tour_toppage" class="card_lists">
+          <!-- tour_data.jsonが入る -->
+        </ul>
+        <a href="#" class="seemore_btn">もっと見る</a>
+      </article>
+
+      <article class="useful">
+        <h2 class="title">お役立ち情報</h2>
+        <ul class="useful_lists">
+          <li class="useful_item">
+            <a href="#" class="useful_link">
+              <figure>
+                <img src="images/useful/ministry_of_foreign_affairs.png" alt="外務省ホームページ">
+                <figcaption>外務省のホームページ</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li class="useful_item">
+            <a href="#" class="useful_link">
+              <figure>
+                <img src="images/useful/passport.png" alt="パスポート申請方法">
+              </figure>
+            </a>
+          </li>
+          <li class="useful_item">
+            <a href="#" class="useful_link">
+              <figure>
+                <img src="images/useful/sim.png" alt="SIMカード購入&利用方法">
+              </figure>
+            </a>
+          </li>
+          <li class="useful_item">
+            <a href="#" class="useful_link">
+              <figure>
+                <img src="images/useful/recommended_apps.png" alt="おすすめアプリ">
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <footer>
       <ul>
         <li>
-          <a href="#">
-            お祭り情報
+          <a href="index.html" target="_blank" rel="noopener noreferrer">
+            会社案内
           </a>
         </li>
         <li>
           <a href="#">
-            世界遺産情報
+            個人情報保護
           </a>
         </li>
         <li>
           <a href="#">
-            ツアー情報
+            ご利用案内
           </a>
         </li>
         <li>
           <a href="#">
-            お役立ち情報
+            お問い合わせ
           </a>
         </li>
-        <li class="log_in">
+        <li>
           <a href="#">
-            ログイン/新規登録
+            サイトマップ
           </a>
         </li>
       </ul>
-    </nav>
-    <div class="hamburger">
-      <span class="hamburger_bar"></span>
-      <span class="hamburger_bar"></span>
-      <span class="hamburger_bar"></span>
-    </div>
-  </header>
+      <p class="copyright">
+        <small>
+          &copy; 2023 バックパックツーリズム株式会社
+        </small>
+      </p>
+    </footer>
 
-  <main>
-    <article class="ticket">
-
-    </article>
-
-    <article class="recommend">
-      <ul class="tab_lists">
-        <li class="tab_item">
-          <a id="tab_festival_info" href="#festival_info" class="active tab_link">
-            お祭り情報
-          </a>
-        </li>
-        <li class="tab_item">
-          <a id="tab_world_heritage_info" href="#world_heritage_info" class="tab_link">
-            世界遺産情報
-          </a>
-        </li>
-      </ul>
-
-      <div id="recommend_contents">
-        <div id="festival_info">
-          <ul id="get_festival_toppage" class="card_lists">
-            <!-- festival_data.jsonが入る -->
-          </ul>
-          <a href="#" class="seemore_btn">
-            もっと見る
-          </a>
-        </div>
-
-        <div id="world_heritage_info">
-          <ul id="get_world_heritage_toppage" class="card_lists">
-            <!-- festival_data.jsonが入る -->
-          </ul>
-          <a href="#" class="seemore_btn">
-            もっと見る
-          </a>
-        </div>
-      </div>
-    </article>
-
-    <article class="tour">
-      <h2 class="title">ツアー情報</h2>
-      <ul id="get_tour_toppage" class="card_lists">
-        <!-- news_data.jsonが入る -->
-      </ul>
-      <a href="#" class="seemore_btn">
-        もっと見る
-      </a>
-    </article>
-
-    <article class="useful">
-      <h2 class="title">お役立ち情報</h2>
-      <ul class="useful_lists">
-        <li class="useful_item">
-          <a href="#" class="useful_link">
-            <figure>
-              <img src="images/useful/ministry_of_foreign_affairs.png" alt="外務省ホームページ">
-              <figcaption>外務省のホームページ</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li class="useful_item">
-          <a href="#" class="useful_link">
-            <figure>
-              <img src="images/useful/passport.png" alt="パスポート申請方法">
-            </figure>
-          </a>
-        </li>
-        <li class="useful_item">
-          <a href="#" class="useful_link">
-            <figure>
-              <img src="images/useful/sim.png" alt="SIMカード購入&利用方法">
-            </figure>
-          </a>
-        </li>
-        <li class="useful_item">
-          <a href="#" class="useful_link">
-            <figure>
-              <img src="images/useful/recommended_apps.png" alt="おすすめアプリ">
-            </figure>
-          </a>
-        </li>
-      </ul>
-    </article>
-  </main>
-
-  <footer>
-    <ul>
-      <li>
-        <a href="index.html">
-          会社案内
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          個人情報保護
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          ご利用案内
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          お問い合わせ
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          サイトマップ
-        </a>
-      </li>
-    </ul>
-    <p class="copyright">
-      <small>
-        &copy; 2023 バックパックツーリズム株式会社
-      </small>
+    <p class="pagetop">
+      <a href="#">↑</a>
     </p>
-  </footer>
-
-  <p class="pagetop">
-    <a href="#">↑</a>
-  </p>
+  </div>
 
   <script src="js/common/jquery-3.7.0.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/reservation/earth.js" type="module"></script>
   <script src="js/reservation/createTour.js"></script>
+  <script src="js/reservation/createTicket.js"></script>
   <script src="js/reservation/createFestival.js"></script>
   <script src="js/reservation/createWorldHeritage.js"></script>
+  <script src="js/reservation/clickRouteBtn.js"></script>
   <script src="js/reservation/tab.js"></script>
   <script src="js/components/hamburger.js"></script>
   <script src="js/components/pagetop.js"></script>
