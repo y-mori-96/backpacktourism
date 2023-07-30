@@ -5,6 +5,7 @@ $col-main: #85ccb7;
 $col-main-hover: #b4e7d7;
 $col-accent: #d49426;
 $col-accent-hover: #e1af5a;
+$col-clear-hover: #ffe500;
 $col-promotion-info: #CD853F;
 $col-company-info: #4169E1;
 $col-fiscal-info: #CD5C5C;
@@ -38,6 +39,7 @@ $bd-normal: 1px solid #000;
 $bd-search-box: 1px solid #000;
 $bd-company-table: 1px solid #707070;
 $bd-mb-nav: 1px solid #fff;
+$bd-search-btn-active: 3px solid #000;
 
 /* shadow
 ******************************/
@@ -65,6 +67,8 @@ $wd-pc-company-table: 200px;
 
 $hi-header: 50px;
 $hi-hero-concept: 225px;
+$hi-search-box-ticket: 30px;
+$hi-search-ticket-wrapper: calc(($hi-search-box-ticket * 3) + (1rem * 3));
 $hi-search-box: 50px;
 
 $wdhi-accordion-arrow: 1rem;

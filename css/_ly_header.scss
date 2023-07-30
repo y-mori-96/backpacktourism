@@ -108,17 +108,11 @@ header {
   @include mq(md) {
     overflow-x: hidden;
 
-    &.active {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-    }
-
     nav {
       position: fixed;
       top: $hi-header;
       right: -100%;
+      z-index: 1;
 
       transition: all .3s linear;
 

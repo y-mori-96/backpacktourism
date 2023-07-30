@@ -1,10 +1,23 @@
 /* common
 ******************************/
+
+@include mq(md) {
+  .no_scroll {
+    &.active {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
 .corporate_site .news,
 .corporate_site .contents .wrapper,
 .corporate_site#news .search,
 .corporate_site#company .company_info,
 .corporate_site#company .access .wrapper,
+.reservation_site .ticket .search form,
+.reservation_site .ticket .container,
 .reservation_site .recommend,
 .reservation_site .tour,
 .reservation_site .useful {
@@ -27,4 +40,9 @@ article {
     }
   }
 
+  &.ticket {
+    padding: 0;
+  }
+
 }
+
