@@ -1,0 +1,4 @@
+SetEnvIf Host "^y-mori-96.com$" host
+order deny,allow
+deny from all
+allow from env=host
