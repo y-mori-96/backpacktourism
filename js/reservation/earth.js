@@ -96,20 +96,20 @@ $(function () {
       cameraStartPositionX = mbStartPositionX;
     }
 
-    console.log(cameraStartPositionX);
+    // console.log(cameraStartPositionX);
 
     // 再設定
     camera.position.x = cameraStartPositionX;
   }
 
-  let cameraStartPositionY = 0;
-  let cameraStartPositionZ = 150;
+  let cameraStartPositionY = 20;
+  let cameraStartPositionZ = 130;
   // 地球
   let meshEarthStartPositionX = 0;
   let meshEarthStartPositionY = 0;
   let meshEarthStartPositionZ = 0;
   // 線形
-  let scalePercentMiddle = 30;
+  let scalePercentMiddle = 35;
   let scalePercentFinish = 100;
 
 
